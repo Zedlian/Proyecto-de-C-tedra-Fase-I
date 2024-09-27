@@ -1,3 +1,9 @@
+
+function showMessage() {
+    var message = document.getElementById("messageInput").value;
+    var customMessage = "Tu pin es: " + message + " " + "Bienvenido viajero pokemon";
+    alert(customMessage);
+}
 function mostrarOpcion(opcion) {
     document.querySelectorAll('main > div').forEach(div => div.classList.add('oculto'));
     document.getElementById(opcion).classList.remove('oculto');

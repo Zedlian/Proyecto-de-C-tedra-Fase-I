@@ -2,10 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Responsive Navbar</title>
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylebank.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
-    
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top">
+  <ion-icon name="invert-mode-outline" class="custom-icon"></ion-icon>
+    <a id="Logoizquierda"  class="navbar-brand" href="#">Servicios</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="Inicio.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Micuenta.html">Mi cuenta</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+  <footer>
+    <div class="footer-content p-4">
+        <p>&copy; Todos los derechos PokemonBank.</p>
+        <p><a href="#">Privacidad</a> | <a href="#">Acerca de nosotros</a></p>
+        <div class="social-icons">
+            <a href="#" aria-label="Facebook">Facebook</a>
+            <a href="#" aria-label="Twitter">Twitter</a>
+            <a href="#" aria-label="Instagram">Instagram</a>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>

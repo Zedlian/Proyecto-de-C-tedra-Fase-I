@@ -44,6 +44,51 @@
             </li>
         </ul>
     </div>
+    <main>
+        <div>
+            <button class="btn btn-danger btn-lg" onclick="mostrarOpcion('retiro')">Retiro</button>
+            <button class="btn btn-danger btn-lg" onclick="mostrarOpcion('deposito')">Depósito</button>
+            <button class="btn btn-danger btn-lg" onclick="mostrarOpcion('saldo')">Saldo</button>
+            <button class="btn btn-danger btn-lg" onclick="mostrarOpcion('pago')">Pago de Servicios</button>
+        </div>
+    
+        <div id="retiro" class="oculto">
+            <h1>Retiro</h1>
+            <input type="number" id="retiroMonto" placeholder="Monto">
+            <button class="btn btn-warning" onclick="realizarRetiro()">Retirar</button>
+            <div class="d-grid gap-2 col-2 mx-auto">
+                <a class="btn btn-primary" href="Cajero.html" role="button">Cancelar Transacción</a>
+            </div>
+        </div>
+    
+        <div id="deposito" class="oculto">
+            <h2>Depósito</h2>
+            <input type="number" id="depositoMonto" placeholder="Monto">
+            <button class="btn btn-warning" onclick="realizarDeposito()">Depositar</button>
+            <div class="d-grid gap-2 col-2 mx-auto">
+                <a class="btn btn-primary" href="Cajero.html" role="button">Cancelar Transacción</a>
+            </div> 
+        </div>
+    
+        <div id="saldo" class="oculto">
+            <h2>Saldo</h2>
+            <p id="saldoActual">Saldo actual: $0</p>
+            <div class="d-grid gap-2 col-2 mx-auto">
+                <a class="btn btn-primary" href="Cajero.html" role="button">Regresar a Menu</a>
+            </div> 
+        </div>
+    
+        <div id="pago" class="oculto">
+            <h2>Pago de Servicios</h2>
+            <input type="text" id="servicio" placeholder="Servicio">
+            <input type="number" id="pagoMonto" placeholder="Monto">
+            <button class="btn btn-warning" onclick="realizarPago()">Pagar</button>
+            <div class="d-grid gap-2 col-2 mx-auto">
+                <a class="btn btn-primary" href="Cajero.html" role="button">Cancelar Transacción</a>
+            </div> 
+        </div>
+    </main>
+
 </nav>
 </head>
 <body>

@@ -1,0 +1,23 @@
+body{
+    background-color:whitesmoke;
+}
+
+.header{
+    background-color: brown;
+    position: fixed;
+}
+
+
+#presentacion{
+    background-color: whitesmoke;
+    padding: 5%;
+    text-align: center;
+}
+.custom-icon {
+    font-size: 40px; 
+    color: white;    
+  }
+
+h5{
+    font-size: 35px;
+}
